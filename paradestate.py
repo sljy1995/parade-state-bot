@@ -62,7 +62,7 @@ async def check_missing_votes(context: ContextTypes.DEFAULT_TYPE):
         msg = "Thank you all for providing your parade state timely!"
     else:
         list_text = "\n".join([f"- @{name}" for name in missing])
-        msg = f"These are the people who have not provided their parade state for today.\n\n{list_text}"
+        msg = f"Hello what time already why y'all still haven't update your parade state.\n\n{list_text}"
     
     await context.bot.send_message(chat_id=GROUP_CHAT_ID, text=msg)
 
@@ -116,7 +116,7 @@ async def view_roster(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(text, parse_mode='Markdown')
 
 async def view_time(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(f"⏰ Schedule: **{memory_data['poll_time']} SGT** (Sun-Thu).")
+    await update.message.reply_text(f"⏰ Schedule: *{memory_data['poll_time']} SGT* (Sun-Thu).")
 
 async def handle_poll_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Listens for votes on the tracked poll"""
