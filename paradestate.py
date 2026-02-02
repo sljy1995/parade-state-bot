@@ -6,7 +6,7 @@ from telegram.ext import Application, CommandHandler, PollAnswerHandler, Context
 
 # ================= CONFIGURATION =================
 BOT_TOKEN = '8431373969:AAEyuKDcU3Mhniew-BS3RKxCj59Zenw83Lg'
-GROUP_CHAT_ID = -5140261147 
+GROUP_CHAT_ID = -5110759100
 SGT = pytz.timezone('Asia/Singapore')
 
 ACTIVE_DAYS = (0, 1, 2, 3, 6)
