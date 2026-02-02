@@ -53,7 +53,7 @@ async def check_missing_votes(context: ContextTypes.DEFAULT_TYPE):
     missing = [item for item in expected if item not in voted]
 
     if not missing:
-        await context.bot.send_message(chat_id=GROUP_CHAT_ID, text="✅ All parade states updated!")
+        await context.bot.send_message(chat_id=GROUP_CHAT_ID, text="✅ All parade states updated. Great job everyone!")
         return
 
     # 1. Send Count Summary to Group
